@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Lato:wght@400;700&display=swap');
+
+/* ----Table of Contents----
+- Main Instructions
+- Measurment Entry 
+- Results Output */
+
+/* ----Main Instructions---- */
+
+#welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Dhurjati", sans-serif;
+    color: #E3000B;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.welcome-msg{
+    margin: 5px;;
+}
+#how-to-use{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+.introQ{
+    font-family: "Dhurjati", sans-serif;
+    font-size: 35px;
+    margin: 5px;
+    color: #FFED00;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.introA{
+    font-family: "Dhurjati", sans-serif;
+    display: flex;
+    text-align: center;
+    word-wrap:break-word;
+    width: 700px; 
+    white-space: normal;
+    font-size: 25px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.lets-go-btn{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+#lets-go-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 30px;
+    font-size: 18px;
+    font-family: "Dhurjati", sans-serif;
+    background-color: #E3000B;
+    text-shadow: -1px 0 #FFED00, 0 1px #FFED00, 1px 0 #FFED00, 0 -1px #FFED00;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+#lets-go-btn:hover{
+    background-color: #f52525;
+    text-decoration: underline;
+}
+#lets-go-btn:active{
+    background-color: #a10008;
+}
+#results{
+    display: none;
+}
+
+/* ----Measurement Entry---- */
+#converter-tool{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+}
+.instruction-msg{
+    display: flex;
+    font-family: "Dhurjati", sans-serif;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+}
+.input-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#drop-down{
+    width: 180px;
+    margin: 10px;    
+}    
+.input-units{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: "Dhurjati", sans-serif;
+    font-size: 20px;
+}
+#convert-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 30px;
+    font-size: 18px;
+    font-family: "Dhurjati", sans-serif;
+    background-color: #E3000B;
+    text-shadow: -1px 0 #FFED00, 0 1px #FFED00, 1px 0 #FFED00, 0 -1px #FFED00;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+#convert-btn:hover{
+    background-color: #f52525;
+    text-decoration: underline;
+}
+#convert-btn:active{
+    background-color: #a10008;
+}
+
+/* ----Results Output---- */
+.results-text{
+    font-family: "Dhurjati", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+}
+.gridResults{
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+.basePlateResults{
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+.part-num{
+    margin: 0px;
+}

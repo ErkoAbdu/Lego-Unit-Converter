@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrickMMO LEGO Converter</title>
+    <script src="jquery-3.7.1.min"></script>
+    <script src="lego.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <!--Main header as well as instructions on start page-->
+    <div id="welcome">
+        <h1 class="welcome-msg">BrickMMO LEGO Unit Converter</h1>
+    </div>
+    <div id="start-page">
+        <div id="how-to-use">
+            <div>
+                <p class="introQ">How does this tool work?</p>
+            </div>
+            <div>
+                <p class="introA">This tool is designed for converting measurements between millimeters, centimeters, inches, feet, and meters into Lego studs! Simply input the desired unit of measurement for length and width, and the tool will provide the corresponding number of studs for both dimensions. Additionally, it will suggest the required baseplates (48x48) and grids (16x16) to cover the desired area! </p>
+            </div>
+        </div>
+        <!-- Button to take you to the actual tool converter -->
+        <div class="lets-go-btn">
+            <button type="submit" id="lets-go-btn">Lets Go!</button> 
+        </div>
+    </div>
+</header>
+<main>
+    <!-- Main tool to convert measure to studs, drop down to select and 2 input fields to enter length and width -->
+    <div id="converter-tool">
+        <div id="input-page">
+            <div id="enter-info">
+                <h2 class="instruction-msg">Enter Information</h2> 
+            </div>
+        </div>
+        <div id="form-container">
+            <form class="input-form">
+                <div class="drop-down-container">
+                    <select id="drop-down" name="drop-down">
+                        <option value="">--SELECT--</option>
+                        <option value="millimeters">Millimeters</option>
+                        <option value="centimeters">Centimeters</option>
+                        <option value="inches">Inches</option>
+                        <option value="feet">Feet</option>
+                        <option value="meters">Meters</option>
+                    </select>
+                </div>
+                <div class="input-units">
+                    <label for="input-length">Enter Length Amount:</label>
+                    <input type="number" id="input-length" min="0">
+                </div>
+                <div class="input-units">
+                    <label for="input-width">Enter Width Amount:</label>
+                    <input type="number" id="input-width" min="0">
+                </div>
+                <!-- button to convert user inputs -->
+                <div class="convert-btn">
+                    <button type="button" id="convert-btn">Convert!</button>
+                </div>
+            </form>
+        </div>
+        <!-- Hidden results that will display after button is clicked in addition to images of lego pieces and part number with link on where to buy them -->
+        <div id="results">
+            <div class="results-text">
+                    <p class="resultsL">The total length in Lego studs is: <strong><span id="length-result"></span></strong></p>
+                    <p class="resultsW">The total width in Lego studs is: <strong><span id="width-result"></span></strong></p>
+                <div>
+                    <div class="grid-result-and-image">
+                        <p class="gridResults">The amount of Grids(16x16) needed to fill area is: <strong><span id="grid-result"></span></strong></p>
+                        <img src="images/grid.png" alt="image of green 16x16 Lego grid">
+                        <p class="part-num">Part Number: <a href="https://www.bricklink.com/v2/catalog/catalogitem.page?P=3867#T=C" target="_blank" rel="noreferrer noopener"> 3867</a></p>
+                    </div>
+                    <div class="baseplate-result-and-image">
+                        <p class="basePlateResults">The amount of Baseplates(48x48) needed to fill area is: <strong><span id="baseplate-result"></span></strong></p>
+                        <img src="images/baseplate.png" alt="image of green 48x48 Lego baseplate">
+                        <p class="part-num">Part Number: <a href="https://www.lego.com/en-ca/product/green-baseplate-11023" target="_blank" rel="noreferrer noopener"> 11023</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
