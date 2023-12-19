@@ -9,3 +9,12 @@ To use just clone the repo and follow the instructions when opening the index.ht
 
 ## Whats Next?
 Ideally as my skills improve I would like to add an api that has a list of many lego pieces that I could somehow use to show what would fit in the calculated area!
+
+## Images
+
+Start Screen:
+Instructions Page:
+![Lego Unit Converter Instructions Page](/images/instructions.png "Lego Unit Converter Instructions Page")
+
+Input Page:
+![Lego Unit Converter Input Page](/images/input.png "Lego Unit Converter Input Page")
